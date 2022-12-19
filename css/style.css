@@ -1,0 +1,71 @@
+/* Color */
+:root{
+    --primary:#1B262C;
+    --secondary:#224c4c;
+    --mono:#1c2f3a;
+    --light:#f0f1ef;
+    --dark:#22252a;
+}
+body{
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+.p-6{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.pt-6{
+    padding-top: 6rem;
+    /* padding-bottom: 6rem; */
+}
+.mt-6{
+    margin-top: 5rem;
+}
+.bg-main{
+    background-color: var(--primary);
+}
+
+.navbar{
+    /* background: var(--mono) !important; */
+    background-color: transparent;
+}
+.nav-link, .navbar-brand{
+    font-weight: bolder;
+    color: var(--light);
+    transition: 1s;
+    text-transform: uppercase;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: var(--light);
+    transition: 1s;
+}
+#home{
+    background: rgb(41,50,60);
+    background: linear-gradient(90deg, rgba(41,50,60,1) 0%, rgba(72,85,99,1) 77%);
+    height: 101vh;
+    margin-top: -7vh;
+}
+.btn{
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#about{
+    background: var(--primary);
+    height: 100vh;
+    /* margin-top: -7vh; */
+}
+#kiri{
+    height: 50vh;
+    color: var(--light);
+}
+#kanan{
+    height: 50vh;
+}
+#job{
+    color: var(--light);
+}
+
+/* typewriter css */
