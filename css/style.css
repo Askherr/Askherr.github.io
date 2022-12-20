@@ -42,8 +42,8 @@ body{
 #home{
     background: rgb(41,50,60);
     background: linear-gradient(90deg, rgba(41,50,60,1) 0%, rgba(72,85,99,1) 77%);
-    height: 101vh;
-    margin-top: -7vh;
+    min-height: 100vh;
+    margin-top: -8vh;
 }
 .btn{
     border-radius: 40px;
@@ -53,19 +53,40 @@ body{
     padding-right: 20px;
 }
 #about{
-    background: var(--primary);
-    height: 100vh;
+    /* background: var(--primary); */
+    background: rgb(41,50,60);
+    background: linear-gradient(90deg, rgba(41,50,60,1) 0%, rgba(72,85,99,1) 77%);
+    min-height: 100vh;
     /* margin-top: -7vh; */
 }
 #kiri{
-    height: 50vh;
+    min-height: 50vh;
     color: var(--light);
 }
 #kanan{
-    height: 50vh;
+    min-height: 50vh;
 }
 #job{
     color: var(--light);
 }
-
-/* typewriter css */
+@media screen and (max-width: 600px) {
+    #home{
+        margin-top: -10vh;
+        max-height:200vh ;
+    }
+    #profil{
+        width: 80%;
+    }
+    #kiri > h1{
+        font-size: 20pt !important;
+    }
+    .offcanvas-body{
+        background-color: var(--dark);
+    }
+    .nav-link, .navbar-brand{
+        font-weight: bolder;
+        color: var(--light);
+        transition: 1s;
+        text-transform: uppercase;
+    }
+  }
